@@ -1,0 +1,5 @@
+{
+  "name": "OpenSunoClone Project Structure",
+  "description": "An interactive web application to visualize the directory structure for 'OpenSunoClone', a text-to-music generator, including setup commands and file content examples.",
+  "requestFramePermissions": []
+}
