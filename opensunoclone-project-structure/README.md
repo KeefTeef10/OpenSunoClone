@@ -18,3 +18,19 @@ View your app in AI Studio: https://ai.studio/apps/drive/1TE1it6vvV4zq3juG6OAGOR
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+
+## Duey agent
+
+`Duey` is a lightweight TypeScript helper for building agents that validate their
+own work. Provide a task callback that produces an answer and a verification
+callback that checks the result. Duey will retry the task until the verification
+passes or a retry limit is hit.
+
+Example usage:
+
+```ts
+import { Duey } from './src/duey';
+
+const agent = new Duey(generate, verify);
+const result = await agent.run('Write a verse about oceans');
+```
